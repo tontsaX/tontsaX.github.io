@@ -1,3 +1,7 @@
+/** TODO: Mobiilielementtien käsittely
+ * Kun html-sivun ulkoasu on valmis, tarkista elementtien käyttö perusSEO:n kannalta.
+ * Luo mobiilielementit ja tee dokumenttimuutoksia, jos mahdollista, fragmenttien avulla.
+ */
 if (screen.width <= 600) {
   const setMobileElements = (() => {
     const moveSomeLinksIntoProfile = (() => {
