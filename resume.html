@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume page about Toni Kainulainen.">
+  <link href='https://fonts.googleapis.com/css?family=Open%20Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="stylesheets/resume-style.css">
+  <title>Toni Kainulainen - Resume</title>
+</head>
+
+<body>
+  <div id="mobile-top">
+    <button id="hamburger">&#9776;</button>
+    <h1 id="mobile-title">Toni Kainulainen</h1>
+    <a class="resume-download" id="mobile-resume-download" href="Toni-Kainulainen-Resume.pdf" target="_blank">Download Resume</a>
+  </div>
+  
+  <nav>
+    <ul class="top-nav inline-list">
+      <li id="skip-navigation">
+        <a href="#main-content">Skip to main content</a>
+      </li>
+      <li>
+        <a class="top-nav-link top-nav-title uppercase" href="#about">About me</a>
+      </li>
+      <li>
+        <a class="top-nav-link top-nav-title uppercase" href="#education">Education</a>
+      </li>
+      <li>
+        <a class="top-nav-link top-nav-title uppercase" href="#experience">Work history</a>
+      </li>
+      <li>
+        <a class="top-nav-link top-nav-title uppercase" href="#skills">Skills</a>
+      </li>
+      <li>
+        <a class="top-nav-link uppercase" href="#languages">Languages</a>
+      </li>
+      <li>
+        <a class="top-nav-link top-nav-title uppercase" href="#interests">My interests</a>
+      </li>
+      <!-- TODO: Uusi navigaatiolinkki
+           Lisää Contact Me -navigaatiolinkki. 
+      -->
+    </ul>
+  </nav>
+
+  <header>
+    <div class="header-background" id="profile-background"></div>
+
+    <div id="profile">
+      <div id="profile-img-holder">
+        <img id="profile-img" src="images/profile.jpg" alt="Profile picture of me.">
+      </div>
+      <div id="profile-info">
+        <h1>Toni Kainulainen</h1>
+        <span class="separator"></span>
+        <p>Software Developer</p>
+        <div id="profile-contacts-holder">
+          <address>
+            tonikainulainen.ttk@hotmail.fi
+          </address>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-background" id="profile-msg-background">
+      <img id="profile-msg-bg-img" src="images/code3-mobile.png" alt="">
+      <div id="profile-msg-holder">
+        <p id="profile-msg-title">Hi</p>
+        <p class="profile-msg">
+          I'm Toni Kainulainen.<br>
+          What's up?
+        </p>
+        <p class="profile-msg">Check out my stuff!</p>
+        <!-- TODO: Ansioluettelon lataus
+             Lisää button, jonka alle tulee latauslinkit suomen- ja englanninkieliseen ansioluetteloon.
+        -->
+        <a class="resume-download" href="Toni-Kainulainen-Resume.pdf" target="_blank">Download Resume</a>
+        <div class="some-links-container">
+          <a class="some-link" href="https://www.linkedin.com/in/toni-kainulainen/" target="_blank">
+            <img class="some-link-img" src="images/svg/linkedin.svg" alt="Link to my LinkedIn page." width="59"
+              height="50">
+          </a>
+          <a class="some-link" href="https://github.com/tontsaX" target="_blank">
+            <img class="some-link-img" src="images/github.png" alt="Link to my GitHub page." width="50" height="50">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="center max-width">
+    <section id="about">
+      <h2 class="subtitle capitalize">About me</h2>
+      <div class="info-box">
+        <!-- TODO: Profiiliteksti
+             Käännä ja lisää profiiliteksti ansioluettelosta. 
+        -->
+        <p>
+          Here is some text about me.<br>
+          My CV text.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="subtitle capitalize">Education</h2>
+      <div class="education-info info-box">
+        <p>
+          2014–2021<br>
+          <span class="bold">Engineer (Bachelor), Information Technology</span><br>
+          Turku University of Applied Science
+        </p>
+        <!-- TODO: Opinnäytetyö
+             Lisää linkit opinnäytetyön lähdekoodiin ja kirjoitelmaan Theseuksessa.
+             Mainitse, että työ on tarjolla vain Suomeksi. 
+        -->
+      </div>
+
+      <div class="info-box">
+        <p>
+          2012–2014<br>
+          <span class="bold">Electrician</span><br>
+          Salo Region Vocational College
+        </p>
+      </div>
+
+      <div class="info-box">
+        <p>
+          2008–2011<br>
+          <span class="bold">A Level</span><br>
+          Salo Upper Secondary School
+        </p>
+      </div>
+
+    </section>
+
+    <section id="experience">
+      <h2 class="subtitle capitalize">Work history</h2>
+      <div class="info-box hover-glow">
+        <p class="info-box-title">
+          9/2021–12/2021<br>
+          <span class="bold">Software Developer</span><br>
+          Turku AMK DenTech Dental Laboratory
+        </p>
+        <button class="info-box-descr-btn info-box-descr-open" type="button">
+          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
+            height="40">
+        </button>
+        <div class="info-box-descr">
+          <p class="info-box-descr-text">
+            I was part of a developer team, which developed a mobile application for teeth care.<br>
+            Job was fixed-termed and I got to work as a <span class="bold">project manager</span> 4.11.–16.12.2021.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box hover-glow">
+        <p class="info-box-title">
+          8/2018–1/2020<br>
+          <span class="bold">Operator</span><br>
+          Valmet Automotive Oy
+        </p>
+        <button class="info-box-descr-btn" type="button">
+          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
+            height="40">
+        </button>
+        <div class="info-box-descr hidden">
+          <!-- TODO: Valmet-kuvaus
+               Käännä ja lisää kuvaus työtodistuksesta.
+          -->
+          <p class="info-box-descr-text">
+            Kuvaus
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box hover-glow">
+        <p class="info-box-title">
+          6/–8/2017<br>
+          <span class="bold">Distribution Center Installer</span><br>
+          Adecco Finland Oy
+        </p>
+        <button class="info-box-descr-btn" type="button">
+          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
+            height="40">
+        </button>
+        <div class="info-box-descr hidden">
+          <!-- TODO: Adecco-kuvaus
+               Käännä ja lisää kuvaus työtodistuksesta.
+          -->
+          <p class="info-box-descr-text">
+            Kuvaus
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box hover-glow">
+        <p class="info-box-title">
+          6/–8/2015, 4/–8/2014, 5/–8/2013<br>
+          <span class="bold">Electrician</span><br>
+          JHS-Sähkö Oy
+        </p>
+        <button class="info-box-descr-btn" type="button">
+          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
+            height="40">
+        </button>
+        <div class="info-box-descr hidden">
+          <!-- TODO: Sähkötyökuvaus
+               Kirjoita lyhyt kuvaus sähkötöistä englanniksi.
+          -->
+          <p class="info-box-descr-text">
+            Kuvaus
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box hover-glow">
+        <p class="info-box-title">
+          5/–8/2011<br>
+          <span class="bold">Summer Trainee, Lato Cell Replenishment Operator</span><br>
+          Nokia Oyj
+        </p>
+        <button class="info-box-descr-btn" type="button">
+          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
+            height="40">
+        </button>
+        <div class="info-box-descr hidden">
+          <!-- TODO: Nokia-kuvaus
+               Käännä ja lisää kuvaus työtodistuksesta.
+          -->
+          <p class="info-box-descr-text">
+            Kuvaus
+          </p>
+        </div>
+      </div>
+
+      <div id="other-expc-btn-wrapper">
+        <button id="other-expc-btn" type="button">
+          Other Activities<br>
+          <img id="other-expc-btn-img" src="images/svg/arrow.svg" alt="Open other work activity history." width="100"
+            height="60">
+        </button>
+      </div>
+
+      <div id="other-expc-info">
+        <div class="info-box">
+          <p class="info-box-title">
+            2007–2014<br>
+            <span class="bold">Guitarist</span><br>
+            Ducktape
+          </p>
+          <img class="info-box-img" src="images/svg/ducktape.svg" alt="Band logo." width="70" height="76">
+          <div class="info-box-descr">
+            <p class="info-box-descr-text">
+              I played guitar and organized rehearses in a pop rock band.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <p class="info-box-title">
+            1/–7/2012<br>
+            <span class="bold">Jaeger (Conscript)</span><br>
+            The Finnish Defence Forces
+          </p>
+          <img class="info-box-img" src="images/svg/tornileijona.svg" alt="The Finnish Defence Forces logo" width="70"
+            height="82">
+          <div class="info-box-descr">
+            <p class="info-box-descr-text">
+              I did my mandatory 180 days conscription service as a jaeger team rifleman in motorized infantry.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <p class="info-box-title">
+            2008–2011<br>
+            <span class="bold">Youth Tutor</span><br>
+            Salo Congregation
+          </p>
+          <div class="info-box-descr">
+            <p class="info-box-descr-text">
+              My job was to keep company to the youth of couple of years younger during a youth camp in the
+              congregation. Usually there was from 3-9 tutors helping out the youth instructor and the youth priest.
+              Work wasn't full time and it was done once to more times for a weekend or form one to two weeks in a year.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills">
+      <h2 class="subtitle capitalize">Skills</h2>
+      <div class="info-box">
+        <p>
+          Web Development<br>
+          <span class="bold">JavaScript, Node.js, Java, Spring Boot, HTML, CSS</span>
+        </p>
+      </div>
+
+      <div class="info-box">
+        <p>
+          Software Development<br>
+          <span class="bold">React Native, Java, Python, C#, Unity</span>
+        </p>
+      </div>
+
+      <div class="info-box">
+        <p>
+          Databases<br>
+          <span class="bold">MySQL</span>
+        </p>
+      </div>
+
+      <div class="info-box">
+        <p>
+          Computer Skills<br>
+          <span class="bold">Windows, Linux, Excel, Word, Powerpoint</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="languages">
+      <h2 class="capitalize">I'm Fluent In</h2>
+      <div class="info-box mobile-centered">
+        <div class="language-info">
+          <img id="finnish-flag" src="images/svg/finnish.svg" alt="Finnish flag." width="196" height="120">
+        </div>
+        <div class="language-info">
+          <img id="english-flag" src="images/svg/english.svg" alt="Combined english american flag." width="228"
+            height="120">
+        </div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2 class="subtitle capitalize">My Interests</h2>
+      <div class="info-box hover-glow">
+        <p class="info-box-title">
+          Music
+        </p>
+        <button class="info-box-descr-btn info-box-descr-open" type="button">
+          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description.">
+        </button>
+        <div class="info-box-descr">
+          <p class="info-box-descr-text">
+            I like to play different instruments. I know how to play guitar and I've played around with piano and
+            accordion. I used to make music a lot, but these days I do that rarely.
+          </p>
+          <p>
+            In my 'Other Activities' section, I mention playing guitar and organizing rehearses in a pop rock band 2007–2014.
+            The band was formed in upper secondary school and we played quite a long time.
+            We had few gigs and got to play all the way in Hungary.
+          </p>
+          <a href="https://www.facebook.com/ducktapeband1" target="_blank">Ducktape Facebook</a>
+          <a href="http://ducktaperockband.blogspot.com/" target="_blank">Ducktape Blog</a>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <p>Games</p>
+      </div>
+
+      <div class="info-box">
+        <p>Painting Miniatures</p>
+        <!-- TODO: Miniatyyriharrastus
+             Jos mahdollista ja kehtaat, lisää kuva tai kuvia.
+        -->
+      </div>
+
+      <div class="info-box">
+        <p>Programming</p>
+        <!-- TODO: Ohjelmointiharrastus 
+             Lisää matopeli ja kysy Olegilta, jos piilarivertailun voi lisätä.
+             Tähän voisi myös lisäillä Python-juttuja, OBS-juttu ja Arduino/dronejutuista kuvia.
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="center max-width">
+      <div class="footer-info" id="footer-some-info">
+        <h2>My Other Profiles</h2>
+        <div class="some-links-container">
+          <a class="some-link" href="https://www.linkedin.com/in/toni-kainulainen-a55141144/" target="_blank">
+            <img class="some-link-img" src="images/svg/linkedin.svg" alt="Link to my LinkedIn page." width="50"
+              height="50">
+          </a>
+          <a class="some-link" href="https://github.com/tontsaX" target="_blank">
+            <img class="some-link-img" src="images/github.png" alt="Link to my GitHub page." width="50" height="50">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info" id="footer-contact-info">
+        <h2>Contact Me</h2>
+        <address>
+          tonikainulainen.ttk@hotmail.fi
+        </address>
+        <a class="resume-download" href="Toni-Kainulainen-Resume.pdf" target="_blank">Download Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/resume.js"></script>
+</body>
+
+</html>

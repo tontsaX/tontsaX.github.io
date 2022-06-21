@@ -1,0 +1,5 @@
+@import "resume-mobile.css" screen and (max-width: 600px);
+
+/* TODO: Lisää keskityyli min-width 600px. */
+
+@import "resume-desktop.css" screen and (min-width: 768px);
