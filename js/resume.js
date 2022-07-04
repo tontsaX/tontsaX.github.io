@@ -1,3 +1,15 @@
+const toggleElementVisibility = (element) => {
+  if (element) {
+    const elementStyle = getComputedStyle(element);
+
+    if (elementStyle.display === 'block') {
+      element.style.display = 'none';
+    } else {
+      element.style.display = 'block';
+    }
+  }
+};
+
 /* TODO: Mobiilielementtien käsittely
  * Kun html-sivun ulkoasu on valmis, tarkista elementtien käyttö perusSEO:n kannalta.
  * Luo mobiilielementit ja tee dokumenttimuutoksia, jos mahdollista, fragmenttien avulla.
@@ -15,18 +27,6 @@ if (screen.width <= 600) {
 }
 
 const setUpInfoBoxToggleButtons = (() => {
-  const toggleElement = (element) => {
-    if (element) {
-      const elementStyle = getComputedStyle(element);
-
-      if (elementStyle.display === 'block') {
-        element.style.display = 'none';
-      } else {
-        element.style.display = 'block';
-      }
-    }
-  };
-
   const infoBoxes = document.querySelectorAll('.info-box');
 
   infoBoxes.forEach((infoBox) => {
@@ -35,7 +35,7 @@ const setUpInfoBoxToggleButtons = (() => {
 
     if (descrBtn && description) {
       infoBox.addEventListener('click', () => {
-        toggleElement(description);
+        toggleElementVisibility(description);
 
         if (description.style.display === 'block') {
           descrBtn.style.transform = 'rotate(90deg)';
@@ -49,5 +49,7 @@ const setUpInfoBoxToggleButtons = (() => {
   const otherExpcBtn = document.getElementById('other-expc-btn');
   const otherExpcInfo = document.getElementById('other-expc-info');
 
-  otherExpcBtn.addEventListener('click', () => toggleElement(otherExpcInfo));
+  otherExpcBtn.addEventListener('click', () =>
+    toggleElementVisibility(otherExpcInfo)
+  );
 })();
