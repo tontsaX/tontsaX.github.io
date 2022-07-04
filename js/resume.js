@@ -10,6 +10,28 @@ const toggleElementVisibility = (element) => {
   }
 };
 
+const setResumeDowloadBtn = (() => {
+  const resumeLinks = document.querySelector('#resume-links');
+  const resumeDowloadBtns = document.querySelectorAll('.resume-download');
+
+  resumeDowloadBtns.forEach((resumeDowloadBtn) => {
+    resumeDowloadBtn.addEventListener('focus', () => {
+      toggleElementVisibility(resumeLinks);
+    });
+    /* TODO: 
+    Ei toimi, koska linkkiä painettaessa nappi menettää focus-tilan ja linkit katoavat, eivätkä pysty ohjaamaan
+    kohteeseen. Olisi hyvä, jos nappi ei menettäisi focus-tilaa kun cv-linkit ovat auki. 
+    */ 
+    // resumeDowloadBtn.addEventListener('focusout', () => {
+    //   toggleElementVisibility(resumeLinks);
+    // });
+  });
+
+  // resumeLinks.addEventListener('click', () =>
+  //   toggleElementVisibility(resumeLinks)
+  // );
+})();
+
 /* TODO: Mobiilielementtien käsittely
  * Kun html-sivun ulkoasu on valmis, tarkista elementtien käyttö perusSEO:n kannalta.
  * Luo mobiilielementit ja tee dokumenttimuutoksia, jos mahdollista, fragmenttien avulla.

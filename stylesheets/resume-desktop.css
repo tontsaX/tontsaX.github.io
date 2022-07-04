@@ -243,13 +243,34 @@ header {
   border: 0.1rem solid var(--download-button-color);
   color: var(--main-color-extra-light);
   display: block;
+  font: 1rem/1.6 'open sans';
   margin: 1rem 0;
   padding: 0.75rem;
+  position: relative;
   transition: 0.3s;
+  width: 100%;
+}
+
+#resume-links {
+  position: absolute;
+  left: 93%;
+  text-align: center;
+  top: 64.25%;
+  width: 100px;
+}
+
+.resume-link {
+  background-color: var(--download-button-color);
+  color: var(--main-color-extra-light);
+  display: block;
+  padding: 0.2rem;
+  font: 0.8rem/1.6 'open sans';
 }
 
 .resume-download:hover,
-.resume-download:focus {
+.resume-download:focus,
+.resume-link:hover,
+.resume-link:focus {
   background-color: var(--main-color-extra-light);
   border: 0.1rem solid var(--download-button-color);
   color: var(--main-color-dark);
