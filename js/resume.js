@@ -11,25 +11,19 @@ const toggleElementVisibility = (element) => {
 };
 
 const setResumeDowloadBtn = (() => {
-  const resumeLinks = document.querySelector('#resume-links');
+  const resumeLinksContainer = document.querySelector('#resume-links');
   const resumeDowloadBtns = document.querySelectorAll('.resume-download');
 
   resumeDowloadBtns.forEach((resumeDowloadBtn) => {
     resumeDowloadBtn.addEventListener('focus', () => {
-      toggleElementVisibility(resumeLinks);
+      toggleElementVisibility(resumeLinksContainer);
     });
-    /* TODO: 
-    Ei toimi, koska linkkiä painettaessa nappi menettää focus-tilan ja linkit katoavat, eivätkä pysty ohjaamaan
-    kohteeseen. Olisi hyvä, jos nappi ei menettäisi focus-tilaa kun cv-linkit ovat auki. 
-    */ 
-    // resumeDowloadBtn.addEventListener('focusout', () => {
-    //   toggleElementVisibility(resumeLinks);
-    // });
   });
 
-  // resumeLinks.addEventListener('click', () =>
-  //   toggleElementVisibility(resumeLinks)
-  // );
+  resumeLinksContainer.addEventListener('mouseout', () => {
+    toggleElementVisibility(resumeLinksContainer);
+    resumeDowloadBtns.forEach((resumeDowloadBtn) => resumeDowloadBtn.blur());
+  });
 })();
 
 /* TODO: Mobiilielementtien käsittely
