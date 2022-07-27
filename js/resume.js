@@ -14,19 +14,18 @@ const setResumeDowloadBtn = (() => {
   const resumeDowloadBtns = document.querySelectorAll('.resume-download-btn');
 
   resumeDowloadBtns.forEach((resumeDowloadBtn) => {
+    const resumeLinksContainer = resumeDowloadBtn.parentElement.querySelector('.resume-links-container');
+    resumeLinksContainer.addEventListener('mouseout', () => {
+      toggleElementVisibility(resumeLinksContainer);
+      resumeDowloadBtns.forEach((resumeDowloadBtn) => resumeDowloadBtn.blur());
+    });
     resumeDowloadBtn.addEventListener('focus', () => {
-      const resumeLinksContainer = resumeDowloadBtn.parentElement.querySelector('.resume-links-container');
       /* TODO: CV-linkkien toggle
        * Ei piilota elementtiä, jos nappia on painettu ja 
        * nappia painaa toisen kerran sen ollessa focus-tilassa 
        */
       toggleElementVisibility(resumeLinksContainer);
     });
-  });
-
-  resumeLinksContainer.addEventListener('mouseout', () => {
-    toggleElementVisibility(resumeLinksContainer);
-    resumeDowloadBtns.forEach((resumeDowloadBtn) => resumeDowloadBtn.blur());
   });
 })();
 
