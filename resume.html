@@ -75,15 +75,12 @@
           What's up?
         </p>
         <p class="profile-msg">Check out my stuff!</p>
-        <!-- TODO: Ansioluettelon lataus
-             Lisää button, jonka alle tulee latauslinkit suomen- ja englanninkieliseen ansioluetteloon.
-             Tsekkaa, jos CSS toggle-toiminnolla saisi tehtyä ilman javascriptiä.
-        -->
-        <!-- <a class="resume-download" href="Toni-Kainulainen-Resume.pdf" target="_blank">Download Resume</a> -->
-        <button class="resume-download">Get My Resume</button>
-        <div class="hidden" id="resume-links">
-          <a class="resume-link" href="Toni-Kainulainen-Resume.pdf" target="_blank">In Finnish</a>
-          <a class="resume-link" href="Toni-Kainulainen-Resume.pdf" target="_blank">In English</a>
+        <div class="resume-download-container">
+          <button class="resume-download-btn">Get My Resume</button>
+          <div class="hidden resume-links-container">
+            <a class="resume-link" href="pdf/Resume_Toni_Kainulainen.pdf" target="_blank">In English</a>
+            <a class="resume-link" href="pdf/CV_Toni_Kainulainen.pdf" target="_blank">In Finnish</a>
+          </div>
         </div>
         <div class="some-links-container">
           <a class="some-link" href="https://www.linkedin.com/in/toni-kainulainen/" target="_blank">
@@ -103,7 +100,7 @@
       <h2 class="subtitle capitalize">About me</h2>
       <div class="info-box">
         <p>
-          I'm an enthusiastic Java, Python and JavaScript software developer with experience in creating 
+          I'm an enthusiastic Java, Python and JavaScript software developer with experience in creating
           and maintaining mobile and web applications.
         </p>
       </div>
@@ -127,7 +124,7 @@
       <div class="info-box">
         <p>
           2012–2014<br>
-          <span class="bold">Electrician</span><br>
+          <span class="bold">Vocational qualification in Electrical Engineering and Automation Technology</span><br>
           Salo Region Vocational College
         </p>
       </div>
@@ -157,8 +154,8 @@
         <div class="info-box-descr">
           <p class="info-box-descr-text">
             I was part of a 3-4 developer team developing a mouth healthcare mobile app.
-            My job was to program with React Native framework, look for information about technologies needed 
-            and suggest solutions to the project owner. Employer was particularly pleased with my work. 
+            My job was to program with React Native framework, look for information about technologies needed
+            and suggest solutions to the project owner. Employer was particularly pleased with my work.
             I also worked as a project manager 4.11.–16.12.2021.
           </p>
         </div>
@@ -175,11 +172,10 @@
             height="40">
         </button>
         <div class="info-box-descr hidden">
-          <!-- TODO: Valmet-kuvaus
-               Käännä ja lisää kuvaus työtodistuksesta.
-          -->
           <p class="info-box-descr-text">
-            Kuvaus
+            My job was to install car hatches and doors to a coachwork,
+            check fastening moments with a special tool and prepare coachworks for painting.
+            The work is highly reliant on teamwork.
           </p>
         </div>
       </div>
@@ -195,11 +191,8 @@
             height="40">
         </button>
         <div class="info-box-descr hidden">
-          <!-- TODO: Adecco-kuvaus
-               Käännä ja lisää kuvaus työtodistuksesta.
-          -->
           <p class="info-box-descr-text">
-            Kuvaus
+            I built small power distribution centers into block flat apartments in a client company.
           </p>
         </div>
       </div>
@@ -215,11 +208,9 @@
             height="40">
         </button>
         <div class="info-box-descr hidden">
-          <!-- TODO: Sähkötyökuvaus
-               Kirjoita lyhyt kuvaus sähkötöistä englanniksi.
-          -->
           <p class="info-box-descr-text">
-            Kuvaus
+            I made electrical installations mostly in construction or renovation of shops and
+            laid fiber-optic cable in the tunnel network under Helsinki.
           </p>
         </div>
       </div>
@@ -301,7 +292,7 @@
     </section>
 
     <section id="skills">
-      <h2 class="subtitle capitalize">Skills</h2>
+      <h2 class="subtitle capitalize">IT-Skills</h2>
       <div class="info-box">
         <p>
           Web Development<br>
@@ -420,7 +411,13 @@
         <address>
           tonikainulainen.ttk@hotmail.fi
         </address>
-        <a class="resume-download" href="Toni-Kainulainen-Resume.pdf" target="_blank">Get My Resume</a>
+        <div class="resume-download-container">
+          <button class="resume-download-btn">Get My Resume</button>
+          <div class="hidden resume-links-container">
+            <a class="resume-link" href="pdf/Resume_Toni_Kainulainen.pdf" target="_blank">In English</a>
+            <a class="resume-link" href="pdf/CV_Toni_Kainulainen.pdf" target="_blank">In Finnish</a>
+          </div>
+        </div>
       </div>
     </div>
   </footer>

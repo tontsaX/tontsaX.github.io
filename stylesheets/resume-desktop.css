@@ -238,7 +238,7 @@ header {
   margin: 0.5rem 0;
 }
 
-.resume-download {
+.resume-download-btn {
   background-color: var(--download-button-color);
   border: 0.1rem solid var(--download-button-color);
   color: var(--main-color-extra-light);
@@ -251,9 +251,10 @@ header {
   width: 100%;
 }
 
-#resume-links {
-  position: absolute;
+/* #resume-links { */
+.resume-links-container {
   left: 93%;
+  position: absolute;
   text-align: center;
   top: 64.25%;
   width: 100px;
@@ -267,8 +268,8 @@ header {
   font: 0.8rem/1.6 'open sans';
 }
 
-.resume-download:hover,
-.resume-download:focus,
+.resume-download-btn:hover,
+.resume-download-btn:focus,
 .resume-link:hover,
 .resume-link:focus {
   background-color: var(--main-color-extra-light);

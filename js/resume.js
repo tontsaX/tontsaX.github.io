@@ -11,11 +11,15 @@ const toggleElementVisibility = (element) => {
 };
 
 const setResumeDowloadBtn = (() => {
-  const resumeLinksContainer = document.querySelector('#resume-links');
-  const resumeDowloadBtns = document.querySelectorAll('.resume-download');
+  const resumeDowloadBtns = document.querySelectorAll('.resume-download-btn');
 
   resumeDowloadBtns.forEach((resumeDowloadBtn) => {
     resumeDowloadBtn.addEventListener('focus', () => {
+      const resumeLinksContainer = resumeDowloadBtn.parentElement.querySelector('.resume-links-container');
+      /* TODO: CV-linkkien toggle
+       * Ei piilota elementtiä, jos nappia on painettu ja 
+       * nappia painaa toisen kerran sen ollessa focus-tilassa 
+       */
       toggleElementVisibility(resumeLinksContainer);
     });
   });
