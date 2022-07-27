@@ -38,6 +38,12 @@ ul {
   list-style-type: none;
 }
 
+iframe {
+  width: inherit;
+  height: 200;
+  border: none;
+}
+
 /* Util classes */
 
 .block {
@@ -359,6 +365,12 @@ section {
   width: 2rem;
 }
 
+.info-box-descr-btn:hover {
+  border: 0.1rem solid var(--main-color-pink);
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 #interests .info-box-descr-btn {
   margin: 0 1rem;
 }
@@ -366,12 +378,6 @@ section {
 .info-box-descr-btn-img {
   height: 50%;
   width: auto;
-}
-
-.info-box-descr-btn:hover {
-  border: 0.1rem solid var(--main-color-pink);
-  cursor: pointer;
-  opacity: 0.5;
 }
 
 /* Experience */
