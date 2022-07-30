@@ -52,7 +52,11 @@
 
     <div id="profile">
       <div id="profile-img-holder">
-        <img id="profile-img" src="images/profile.jpg" alt="Profile picture of me.">
+        <!-- TODO: Kuvan koko
+             Kokeile, jos WEBP-tiedostolla voisi saada paremman lopputuloksen
+             alkuperäisestä kuvasta.
+        -->
+        <img id="profile-img" src="images/profile.webp" alt="Profile picture of me.">
       </div>
       <div id="profile-info">
         <h1>Toni Kainulainen</h1>
@@ -355,24 +359,26 @@
           <!-- Sivun upottaminen ei toimi, mutta nauhoitteen kyllä -->
           <!-- <iframe src="https://soundcloud.com/ducktape-band/tracks" title="SouncdCloud Ducktape"></iframe> -->
           <!-- TODO: Tarkista autoplay -->
-          <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120609307&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-          </iframe>
-          <div
-            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-            <a href="https://soundcloud.com/ducktape-band" title="Ducktape band" target="_blank"
-              style="color: #cccccc; text-decoration: none;">Ducktape band</a> · <a
-              href="https://soundcloud.com/ducktape-band/yksin-inen" title="Yksinäinen" target="_blank"
-              style="color: #cccccc; text-decoration: none;">Yksinäinen</a>
-          </div>
-          <!-- TODO: Bändin Facebook
+          <div id="band-stuff">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120609307&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+            <div
+              style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+              <a href="https://soundcloud.com/ducktape-band" title="Ducktape band" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Ducktape band</a> · <a
+                href="https://soundcloud.com/ducktape-band/yksin-inen" title="Yksinäinen" target="_blank"
+                style="color: #cccccc; text-decoration: none;">Yksinäinen</a>
+            </div>
+            <!-- TODO: Bändin Facebook
             Linkki Facebook-logon taakse tai upotus Facebook-sivusta.
           -->
-          <a href="https://www.facebook.com/ducktapeband1" target="_blank">Ducktape Facebook</a>
-          <!-- TODO: Bändin Blogi
+            <a href="https://www.facebook.com/ducktapeband1" target="_blank">Ducktape Facebook</a>
+            <!-- TODO: Bändin Blogi
             Linkki blogin-logon taakse tai upotus blogista.
           -->
-          <a href="http://ducktaperockband.blogspot.com/" target="_blank">Ducktape Blog</a>
+            <a href="http://ducktaperockband.blogspot.com/" target="_blank">Ducktape Blog</a>
+          </div>
         </div>
       </div>
 

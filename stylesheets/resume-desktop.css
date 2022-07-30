@@ -40,8 +40,12 @@ ul {
 
 iframe {
   width: inherit;
-  height: 200;
+  /* height: 200; */
   border: none;
+}
+
+#band-stuff {
+  margin: 1rem 0;
 }
 
 /* Util classes */
