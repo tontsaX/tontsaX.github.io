@@ -1,34 +1,3 @@
-const toggleElementVisibility = (element) => {
-  if (element) {
-    const elementStyle = getComputedStyle(element);
-
-    if (elementStyle.display === 'block') {
-      element.style.display = 'none';
-    } else {
-      element.style.display = 'block';
-    }
-  }
-};
-
-const setResumeDowloadBtn = (() => {
-  const resumeDowloadBtns = document.querySelectorAll('.resume-download-btn');
-
-  resumeDowloadBtns.forEach((resumeDowloadBtn) => {
-    const resumeLinksContainer = resumeDowloadBtn.parentElement.querySelector('.resume-links-container');
-    resumeLinksContainer.addEventListener('mouseout', () => {
-      toggleElementVisibility(resumeLinksContainer);
-      resumeDowloadBtns.forEach((resumeDowloadBtn) => resumeDowloadBtn.blur());
-    });
-    resumeDowloadBtn.addEventListener('focus', () => {
-      /* TODO: CV-linkkien toggle
-       * Ei piilota elementtiä, jos nappia on painettu ja 
-       * nappia painaa toisen kerran sen ollessa focus-tilassa 
-       */
-      toggleElementVisibility(resumeLinksContainer);
-    });
-  });
-})();
-
 /* TODO: Mobiilielementtien käsittely
  * Kun html-sivun ulkoasu on valmis, tarkista elementtien käyttö perusSEO:n kannalta.
  * Luo mobiilielementit ja tee dokumenttimuutoksia, jos mahdollista, fragmenttien avulla.
@@ -44,6 +13,52 @@ if (screen.width <= 600) {
     })();
   })();
 }
+
+const toggleElementVisibility = (element) => {
+  if (element) {
+    const elementStyle = getComputedStyle(element);
+
+    if (elementStyle.display === 'block') {
+      element.style.display = 'none';
+    } else {
+      element.style.display = 'block';
+    }
+  }
+};
+
+const setResumeDowloadBtn = (() => {
+  const resumeDowloadBtns = document.querySelectorAll('.resume-download-btn');
+  const resumeLinksContainers = document.querySelectorAll(
+    '.resume-links-container'
+  );
+
+  resumeDowloadBtns.forEach((resumeDowloadBtn, downloadBtnIndex) => {
+    const resumeLinksContainer = resumeLinksContainers[downloadBtnIndex];
+
+    resumeDowloadBtn.addEventListener('click', () => {
+      toggleElementVisibility(resumeLinksContainer);
+      if(document.activeElement === resumeDowloadBtn) {
+        resumeDowloadBtn.blur();
+      }
+    });
+
+    resumeLinksContainer.addEventListener('mouseout', () => {
+      toggleElementVisibility(resumeLinksContainer);
+      resumeDowloadBtn.blur();
+    });
+
+    
+  });
+
+  document.addEventListener('click', (event) => {
+    resumeDowloadBtns.forEach((resumeDowloadBtn, downloadBtnIndex) => {
+      if(!resumeDowloadBtn.contains(event.target)) {
+        resumeLinksContainers[downloadBtnIndex].style.display = 'none';
+        resumeDowloadBtn.blur();
+      }
+    });
+  });
+})();
 
 const setUpInfoBoxToggleButtons = (() => {
   const infoBoxes = document.querySelectorAll('.info-box');

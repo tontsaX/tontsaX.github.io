@@ -253,6 +253,10 @@ header {
   margin: 0.5rem 0;
 }
 
+.resume-download-container {
+  position: relative;
+}
+
 .resume-download-btn {
   background-color: var(--download-button-color);
   border: 0.1rem solid var(--download-button-color);
@@ -389,6 +393,12 @@ section {
 .info-box-descr-btn-img {
   height: 50%;
   width: auto;
+}
+
+/* About Me */
+
+#about p {
+  margin: 0.5rem 0;
 }
 
 /* Education */
