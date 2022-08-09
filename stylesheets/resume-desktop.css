@@ -78,6 +78,10 @@ iframe {
   box-shadow: 0 0 0.5rem var(--main-color-light);
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .inline-list li {
   display: inline;
 }
@@ -189,6 +193,7 @@ header {
   display: block;
   height: 10.25rem;
   margin: auto;
+  object-fit: contain;
   width: 10.25rem;
 }
 
@@ -290,6 +295,8 @@ header {
 .some-link-img {
   height: 2.5rem;
   width: auto;
+  /* height: 50px;
+  width: 50px; */
 }
 
 .some-link:hover .some-link-img,
@@ -384,6 +391,18 @@ section {
   width: auto;
 }
 
+/* Education */
+
+/* Applied Science */
+
+#thesis-links-container {
+  margin: 0.5rem 0;
+}
+
+.thesis-link {
+  margin: 0 0.5rem 0 0;
+}
+
 /* Experience */
 
 #other-expc-btn-wrapper {
@@ -431,6 +450,17 @@ section {
 #english-flag {
   height: 6rem;
   width: auto;
+}
+
+/* Interests */
+
+/* Music */
+#band-links-container {
+  padding: 1rem 0;
+}
+
+.band-link {
+  margin: 1rem 0;
 }
 
 /* Footer */

@@ -52,10 +52,6 @@
 
     <div id="profile">
       <div id="profile-img-holder">
-        <!-- TODO: Kuvan koko
-             Kokeile, jos WEBP-tiedostolla voisi saada paremman lopputuloksen
-             alkuperäisestä kuvasta.
-        -->
         <img id="profile-img" src="images/profile.webp" alt="Profile picture of me.">
       </div>
       <div id="profile-info">
@@ -118,11 +114,12 @@
           <span class="bold">Engineer (Bachelor), Information Technology</span><br>
           Turku University of Applied Science
         </p>
-        <!-- TODO: Opinnäytetyö
-             Lisää linkki Theseukseen.
-        -->
-        <a href="">My Thesis</a>
-        <a href="https://github.com/tontsaX/thesis-ridesharing-rest-api-with-spring-boot">Thesis Github</a>
+        <div id="thesis-links-container">
+          <a class="thesis-link" href="https://urn.fi/URN:NBN:fi:amk-2021121626472" target="_blank">My Thesis</a>
+          <a class="thesis-link" href="https://github.com/tontsaX/thesis-ridesharing-rest-api-with-spring-boot"
+            target="_blank">Github
+          </a>
+        </div>
       </div>
 
       <div class="info-box">
@@ -356,28 +353,25 @@
             The band was formed in upper secondary school and we played quite a long time.
             We had few gigs and got to play all the way in Hungary.
           </p>
-          <!-- Sivun upottaminen ei toimi, mutta nauhoitteen kyllä -->
-          <!-- <iframe src="https://soundcloud.com/ducktape-band/tracks" title="SouncdCloud Ducktape"></iframe> -->
-          <!-- TODO: Tarkista autoplay -->
           <div id="band-stuff">
-            <iframe width="100%" height="166" scrolling="no" frameborder="no"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120609307&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-            </iframe>
-            <div
-              style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-              <a href="https://soundcloud.com/ducktape-band" title="Ducktape band" target="_blank"
-                style="color: #cccccc; text-decoration: none;">Ducktape band</a> · <a
-                href="https://soundcloud.com/ducktape-band/yksin-inen" title="Yksinäinen" target="_blank"
-                style="color: #cccccc; text-decoration: none;">Yksinäinen</a>
+            <div class="inline-block" id="soundcloud-playlist">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120609307&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+              </iframe>
+              <div
+                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/ducktape-band" title="Ducktape band" target="_blank"
+                  style="color: #cccccc; text-decoration: none;">Ducktape band</a> · <a
+                  href="https://soundcloud.com/ducktape-band/yksin-inen" title="Yksinäinen" target="_blank"
+                  style="color: #cccccc; text-decoration: none;">Yksinäinen</a>
+              </div>
             </div>
-            <!-- TODO: Bändin Facebook
-            Linkki Facebook-logon taakse tai upotus Facebook-sivusta.
-          -->
-            <a href="https://www.facebook.com/ducktapeband1" target="_blank">Ducktape Facebook</a>
-            <!-- TODO: Bändin Blogi
-            Linkki blogin-logon taakse tai upotus blogista.
-          -->
-            <a href="http://ducktaperockband.blogspot.com/" target="_blank">Ducktape Blog</a>
+            <div class="inline-block" id="band-links-container">
+              <a class="block band-link" href="https://www.facebook.com/ducktapeband1" target="_blank">
+                <img class="some-link-img" src="images/png/facebook-f.png" width="50" height="50">Ducktape Facebook</a>
+              <a class="block band-link" href="http://ducktaperockband.blogspot.com/" target="_blank">
+                <img class="some-link-img" src="images/svg/ducktape.svg" width="50" height="50">Ducktape Blog</a>
+            </div>
           </div>
         </div>
       </div>
