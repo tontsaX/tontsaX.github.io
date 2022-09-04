@@ -44,10 +44,6 @@ iframe {
   border: none;
 }
 
-#band-stuff {
-  margin: 1rem 0;
-}
-
 /* Util classes */
 
 .block {
@@ -270,12 +266,13 @@ header {
   width: 100%;
 }
 
-/* #resume-links { */
 .resume-links-container {
-  left: 93%;
+  left: 100%;
+  /* display: block; */
   position: absolute;
   text-align: center;
-  top: 64.25%;
+  /* top: -64.25%; */
+  top: 0%;
   width: 100px;
 }
 
@@ -466,12 +463,33 @@ section {
 
 /* Music */
 
+#band-stuff {
+  margin: 1rem 0;
+  position: relative;
+}
+
+#soundcloud-playlist {
+  margin: 0 1rem 0;
+}
+
 #band-links-container {
-  padding: 0 0 0 1rem;
+  margin: 0 0 0 1rem;
+  position: absolute;
 }
 
 .band-link {
-  margin: 0 0 1rem;
+  align-items: center;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.band-link p {
+  margin: 0 0.5rem;
+}
+
+.band-link:hover,
+.band-link:hover > p {
+  color: var(--main-color-pink);
 }
 
 /* Footer */
