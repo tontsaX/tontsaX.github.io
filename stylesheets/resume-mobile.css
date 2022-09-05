@@ -30,11 +30,6 @@ a:not(.info-box a) {
 
 /* Title Bar */
 
-/* TODO: Flex-box
-   Flex-box ei käytä saman verran tilaa kaikille yläpalkin elementeille 
-   joillakin mobiililaitenäkymillä. 
-*/
-
 #mobile-top {
   align-items: center;
   background-color: var(--main-color-dark);
