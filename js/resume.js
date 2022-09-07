@@ -39,7 +39,11 @@ if (screen.width <= 600) {
         }
       });
 
-      const title = createElement('h1', 'mobile-title', 'Toni Kainulainen');
+      const title = createElement('h1', 'mobile-title');
+
+      const homeTitle = createElement('a', 'home', 'Toni Kainulainen');
+      homeTitle.href = '#top';
+      title.appendChild(homeTitle);
 
       const resumeDownload = createElement(
         'a',

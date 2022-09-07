@@ -58,7 +58,7 @@ ul {
 }
 
 #hamburger,
-#mobile-title {
+#mobile-title a {
   color: var(--main-color-extra-light);
   display: inline-block;
   margin: 0 0.5rem;
