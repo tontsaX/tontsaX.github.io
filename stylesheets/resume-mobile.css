@@ -9,6 +9,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: var(--main-color-dark);
   font: 16px 'open sans';
@@ -43,9 +44,13 @@ ul {
 /* Title Bar */
 
 #mobile-top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: var(--main-color-dark);
   color: var(--main-color-extra-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: bold;
   padding: 1rem 0;
@@ -95,6 +100,7 @@ nav {
   /* border-color: var(--main-color-pink);
   border-style: none solid solid none;
   border-width: 1px; */
+  -webkit-box-shadow: 2px 2px 5px;
   box-shadow: 2px 2px 5px;
   top: var(--top-element-height);
   padding: 1rem;
@@ -115,8 +121,14 @@ nav li {
 /* Header */
 
 header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
 }
@@ -126,6 +138,7 @@ header {
 #profile-msg-bg-img {
   height: 25.5rem;
   margin: var(--top-element-height) 0 0 0;
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
 }
@@ -134,6 +147,7 @@ header {
 
 #profile {
   background-color: var(--main-color-white);
+  -webkit-box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.3em 1em 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.3em 1em 0 rgba(0, 0, 0, 0.19);
   font: 1em 'open sans';
   /* margin: var(--top-element-height) 0 0 0; */
@@ -161,6 +175,7 @@ header {
   display: block;
   height: 10.25rem;
   margin: auto;
+  -o-object-fit: contain;
   object-fit: contain;
   width: 10.25rem;
 }
@@ -214,6 +229,8 @@ h2 {
 
 .info-box {
   border-radius: 1rem;
+  -webkit-box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19),
+    0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19),
     0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19);
   margin: 0 0 1.5rem;
@@ -246,6 +263,8 @@ h2 {
 }
 
 .info-box-descr-open {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -291,6 +310,8 @@ h2 {
 
 #other-expc-btn:hover {
   border-radius: 20%;
+  -webkit-box-shadow: 0 0.1em 0.2em 0 var(--main-color-light),
+    0 0.1em 0.2em 0 var(--main-color-light);
   box-shadow: 0 0.1em 0.2em 0 var(--main-color-light),
     0 0.1em 0.2em 0 var(--main-color-light);
   cursor: pointer;
@@ -298,7 +319,11 @@ h2 {
 
 #other-expc-btn-img {
   height: 3rem;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   width: 5rem;
 }

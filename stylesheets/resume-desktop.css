@@ -8,6 +8,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: var(--main-color-dark);
   margin: 0;
@@ -71,6 +72,7 @@ iframe {
 }
 
 .hover-glow:hover {
+  -webkit-box-shadow: 0 0 0.5rem var(--main-color-light);
   box-shadow: 0 0 0.5rem var(--main-color-light);
 }
 
@@ -90,6 +92,8 @@ iframe {
 
 nav {
   background-color: var(--main-color-extra-light);
+  -webkit-box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.2),
+    0 0.15em 0.5em 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.2),
     0 0.15em 0.5em 0 rgba(0, 0, 0, 0.19);
   height: 3.6rem;
@@ -165,6 +169,8 @@ header {
 
 #profile {
   background-color: var(--main-color-white);
+  -webkit-box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2),
+    0 0.3em 1em 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2),
     0 0.3em 1em 0 rgba(0, 0, 0, 0.19);
   font: 1em 'open sans';
@@ -189,6 +195,7 @@ header {
   display: block;
   height: 10.25rem;
   margin: auto;
+  -o-object-fit: contain;
   object-fit: contain;
   width: 10.25rem;
 }
@@ -218,7 +225,9 @@ header {
 #profile-msg-bg-img {
   border: 2rem solid var(--main-color-light);
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: 0;
   object-position: 0;
   /* opacity: 0.3; */
   width: 100%;
@@ -262,6 +271,8 @@ header {
   margin: 1rem 0;
   padding: 0.75rem;
   position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   width: 100%;
 }
@@ -331,6 +342,8 @@ section {
 
 .info-box {
   border-radius: 1rem;
+  -webkit-box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19),
+    0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19),
     0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19);
   margin: 0 0 1.5rem;
@@ -363,6 +376,8 @@ section {
 }
 
 .info-box-descr-open {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -425,6 +440,8 @@ section {
 
 #other-expc-btn:hover {
   border-radius: 20%;
+  -webkit-box-shadow: 0 0.1em 0.2em 0 var(--main-color-light),
+    0 0.1em 0.2em 0 var(--main-color-light);
   box-shadow: 0 0.1em 0.2em 0 var(--main-color-light),
     0 0.1em 0.2em 0 var(--main-color-light);
   cursor: pointer;
@@ -432,7 +449,11 @@ section {
 
 #other-expc-btn-img {
   height: 3rem;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   width: 5rem;
 }
@@ -478,7 +499,11 @@ section {
 }
 
 .band-link {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 1rem 0;
 }
@@ -488,7 +513,7 @@ section {
 }
 
 .band-link:hover,
-.band-link:hover > p {
+.band-link:hover>p {
   color: var(--main-color-pink);
 }
 
