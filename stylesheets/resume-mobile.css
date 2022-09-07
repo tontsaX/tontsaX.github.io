@@ -59,7 +59,7 @@ a:not(.info-box a) {
   font-weight: bold;
 }
 
-.resume-download-btn {
+#mobile-resume-download-btn {
   background-color: var(--download-button-color);
   border: 0.1rem solid var(--download-button-color);
   color: var(--main-color-extra-light);
