@@ -20,7 +20,9 @@ h1:not(#mobile-title),
 nav,
 #profile-background,
 #profile-msg-title,
-.profile-msg {
+.profile-msg,
+.resume-download-container,
+.info-box-img {
   display: none;
 }
 
@@ -84,6 +86,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 /* Header Background Image */
@@ -101,7 +104,8 @@ header {
   background-color: var(--main-color-white);
   box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.3em 1em 0 rgba(0, 0, 0, 0.19);
   font: 1em 'open sans';
-  margin: var(--top-element-height) 0 0 0;
+  /* margin: var(--top-element-height) 0 0 0; */
+  margin: 3.75rem 0 0;
   padding: 0.5em;
   position: absolute;
   text-align: center;
@@ -112,11 +116,20 @@ header {
   padding: 1rem 0 0 0;
 }
 
+/* #profile-img {
+  border-radius: 50%;
+  display: block;
+  height: 10.25rem;
+  margin: auto;
+  width: 10.25rem;
+} */
+
 #profile-img {
   border-radius: 50%;
   display: block;
   height: 10.25rem;
   margin: auto;
+  object-fit: contain;
   width: 10.25rem;
 }
 
@@ -152,7 +165,8 @@ main {
 section {
   margin: 2rem 0;
   /* scroll-margin-top: 3.6rem; */
-  scroll-margin-top: 4rem;
+  /* scroll-margin-top: 4rem; */
+  scroll-margin-top: var(--top-element-height);
 }
 
 h2 {
@@ -180,12 +194,12 @@ h2 {
   padding: 0.5em;
 }
 
-.info-box-img {
+/* .info-box-img {
   float: right;
   height: auto;
   margin: 1rem 2rem 0 0;
   width: 3.5rem;
-}
+} */
 
 .info-box-descr {
   padding: 0.5em;
@@ -276,6 +290,23 @@ h2 {
 #english-flag {
   height: 4rem;
   width: auto;
+}
+
+/* Interests */
+
+/* Music */
+
+#soundcloud-playlist {
+  margin: 1rem 0;
+}
+
+#band-links-container {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.band-link img {
+  margin: 1rem 0;
 }
 
 /* Footer */
