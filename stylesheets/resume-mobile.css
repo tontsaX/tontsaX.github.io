@@ -184,6 +184,10 @@ address {
   text-align: center;
 }
 
+.some-link {
+  margin: 0 0.25rem;
+}
+
 /* Main */
 
 main {
