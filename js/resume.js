@@ -1,45 +1,3 @@
-if (screen.width <= 600) {
-  const setMobileElements = (() => {
-    const createMobileTitleBanner = (() => {
-      const createElement = (tag, id, content = '') => {
-        const element = document.createElement(tag);
-        element.id = id;
-        element.innerHTML = content;
-        return element;
-      }
-      
-      // construct mobile title bar
-      const mobileTitleBar = createElement('div', 'mobile-top');
-
-      const titleBarFragment = document.createDocumentFragment();
-
-      const hamburger = createElement('button', 'hamburger', '&#9776;');
-
-      const title = createElement('h1', 'mobile-title', 'Toni Kainulainen');
-
-      const resumeDownload = createElement('a', 'mobile-resume-download-btn', 'Download Resume');
-      resumeDownload.href = 'pdf/Resume-Toni-Kainulainen.pdf';
-      resumeDownload.target = '_blank';
-
-      titleBarFragment.append(hamburger, title, resumeDownload);
-
-      mobileTitleBar.appendChild(titleBarFragment);
-
-      // add title bar to the document
-      const navigation = document.querySelector('nav');
-      document.body.insertBefore(mobileTitleBar, navigation)
-    })();
-
-    const moveSomeLinksIntoProfile = (() => {
-      const someLinksContainer = document
-        .querySelector('#profile-msg-holder')
-        .removeChild(document.querySelector('.some-links-container'));
-      const profile = document.querySelector('#profile');
-      profile.appendChild(someLinksContainer);
-    })();
-  })();
-}
-
 const toggleElementVisibility = (element) => {
   if (element) {
     const elementStyle = getComputedStyle(element);
@@ -52,6 +10,63 @@ const toggleElementVisibility = (element) => {
   }
 };
 
+if (screen.width <= 600) {
+  const setMobileElements = (() => {
+    const navigation = document.querySelector('nav');
+
+    const createMobileTitleBanner = (() => {
+      const createElement = (tag, id, content = '') => {
+        const element = document.createElement(tag);
+        element.id = id;
+        element.innerHTML = content;
+        return element;
+      };
+
+      // construct mobile title bar
+      const mobileTitleBar = createElement('div', 'mobile-top');
+
+      const titleBarFragment = document.createDocumentFragment();
+
+      const hamburger = createElement('button', 'hamburger', '&#9776;');
+      hamburger.addEventListener('click', () => {
+        toggleElementVisibility(navigation);
+      });
+
+      // close navigation bar after navigating
+      document.addEventListener('click', (event) => {
+        if (!hamburger.contains(event.target)) {
+          navigation.style.display = 'none';
+        }
+      });
+
+      const title = createElement('h1', 'mobile-title', 'Toni Kainulainen');
+
+      const resumeDownload = createElement(
+        'a',
+        'mobile-resume-download-btn',
+        'Download Resume'
+      );
+      resumeDownload.href = 'pdf/Resume-Toni-Kainulainen.pdf';
+      resumeDownload.target = '_blank';
+
+      titleBarFragment.append(hamburger, title, resumeDownload);
+
+      mobileTitleBar.appendChild(titleBarFragment);
+
+      // add title bar to the document
+      document.body.insertBefore(mobileTitleBar, navigation);
+    })();
+
+    const moveSomeLinksIntoProfile = (() => {
+      const someLinksContainer = document
+        .querySelector('#profile-msg-holder')
+        .removeChild(document.querySelector('.some-links-container'));
+      const profile = document.querySelector('#profile');
+      profile.appendChild(someLinksContainer);
+    })();
+  })();
+}
+
 const setResumeDowloadBtn = (() => {
   const resumeDowloadBtns = document.querySelectorAll('.resume-download-btn');
   const resumeLinksContainers = document.querySelectorAll(
@@ -63,7 +78,7 @@ const setResumeDowloadBtn = (() => {
 
     resumeDowloadBtn.addEventListener('click', () => {
       toggleElementVisibility(resumeLinksContainer);
-      if(document.activeElement === resumeDowloadBtn) {
+      if (document.activeElement === resumeDowloadBtn) {
         resumeDowloadBtn.blur();
       }
     });
@@ -72,13 +87,12 @@ const setResumeDowloadBtn = (() => {
       toggleElementVisibility(resumeLinksContainer);
       resumeDowloadBtn.blur();
     });
-
-    
   });
 
+  // hide download options, when clicked outside download button
   document.addEventListener('click', (event) => {
     resumeDowloadBtns.forEach((resumeDowloadBtn, downloadBtnIndex) => {
-      if(!resumeDowloadBtn.contains(event.target)) {
+      if (!resumeDowloadBtn.contains(event.target)) {
         resumeLinksContainers[downloadBtnIndex].style.display = 'none';
         resumeDowloadBtn.blur();
       }

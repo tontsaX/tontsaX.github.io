@@ -30,6 +30,12 @@ a:not(.info-box a) {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Title Bar */
 
 #mobile-top {
@@ -79,6 +85,28 @@ a:not(.info-box a) {
 }
 
 /* Navigation */
+
+nav {
+  background-color: var(--main-color-white);
+  /* border-color: var(--main-color-pink);
+  border-style: none solid solid none;
+  border-width: 1px; */
+  box-shadow: 2px 2px 5px;
+  top: var(--top-element-height);
+  padding: 1rem;
+  position: fixed;
+  width: 200px;
+  z-index: 9;
+}
+
+nav li {
+  margin: 1rem 0.5em;
+  font: 1.5rem 'open sans';
+}
+
+#skip-navigation {
+  display: none;
+}
 
 /* Header */
 
