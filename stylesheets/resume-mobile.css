@@ -59,7 +59,7 @@ a:not(.info-box a) {
   font-weight: bold;
 }
 
-.resume-download {
+.resume-download-btn {
   background-color: var(--download-button-color);
   border: 0.1rem solid var(--download-button-color);
   color: var(--main-color-extra-light);
@@ -67,12 +67,12 @@ a:not(.info-box a) {
   padding: 0.5rem;
 }
 
-.resume-download:not(#mobile-resume-download) {
+/* .resume-download:not(#mobile-resume-download) {
   display: none;
-}
+} */
 
-.resume-download:hover,
-.resume-download:focus {
+.resume-download-btn:hover,
+.resume-download-btn:focus {
   background-color: var(--main-color-extra-light);
   border: 0.1rem solid var(--download-button-color);
   color: var(--main-color-dark);
