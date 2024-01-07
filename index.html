@@ -1,287 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume page about Toni Kainulainen.">
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta name='description' content='Resume page about Toni Kainulainen.'>
   <link href='https://fonts.googleapis.com/css?family=Open%20Sans' rel='stylesheet'>
-  <link rel="stylesheet" href="stylesheets/resume-style.css">
+  <link rel='stylesheet' href='stylesheets/resume-style.css'>
   <title>Toni Kainulainen - Resume</title>
 </head>
-
-<body>
+<body class='grid row-gap-5xl'>
   <nav>
-    <ul class="top-nav inline-list">
-      <li id="skip-navigation">
-        <a href="#main-content">Skip to main content</a>
+    <ul class='top-nav inline-list'>
+      <li id='skip-navigation'>
+        <a href='#main-content'>Skip to main content</a>
+      </li>
+      <!-- <li>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#'>
+          <i class='icon-home'></i>
+        </a>
+      </li> -->
+      <li>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#about'>About me</a>
       </li>
       <li>
-        <a class="top-nav-link top-nav-title uppercase" href="#about">About me</a>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#education'>Education</a>
       </li>
       <li>
-        <a class="top-nav-link top-nav-title uppercase" href="#education">Education</a>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#experience'>Work history</a>
       </li>
       <li>
-        <a class="top-nav-link top-nav-title uppercase" href="#experience">Work history</a>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#skills'>Skills</a>
       </li>
       <li>
-        <a class="top-nav-link top-nav-title uppercase" href="#skills">Skills</a>
+        <a class='top-nav-link text-uppercase' href='#languages'>Languages</a>
       </li>
       <li>
-        <a class="top-nav-link uppercase" href="#languages">Languages</a>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#interests'>My interests</a>
       </li>
       <li>
-        <a class="top-nav-link top-nav-title uppercase" href="#interests">My interests</a>
-      </li>
-      <li>
-        <a class="top-nav-link top-nav-title uppercase" href="#footer-contact-info">Contact me</a>
+        <a class='top-nav-link top-nav-title text-uppercase' href='#footer-contact-info'>Contact me</a>
       </li>
     </ul>
   </nav>
-
   <header>
-    <div class="header-background" id="profile-background"></div>
-
-    <div id="profile">
-      <div id="profile-img-holder">
-        <img id="profile-img" src="images/webp/profile.webp" alt="Profile picture of me.">
+    <div class='header-background' id='profile-background'></div>
+    <div id='profile'>
+      <div id='profile-img-holder'>
+        <img id='profile-img' src='images/webp/profile.webp' alt='Profile picture of me.'>
       </div>
-      <div id="profile-info">
+      <div id='profile-info'>
         <h1>Toni Kainulainen</h1>
-        <span class="separator"></span>
-        <p>Engineer</p>
-        <div id="profile-contacts-holder">
-          <address>
+        <span class='separator'></span>
+        <p>
+          <i class='icon-briefcase' title='Program developer, Masternet Oy'></i>
+          Program developer
+        </p>
+        <div id='profile-contacts-holder'>
+          <address class='font-normal'>
             tonikainulainen.ttk@hotmail.fi
           </address>
         </div>
       </div>
     </div>
-
-    <div class="header-background" id="profile-msg-background">
-      <img id="profile-msg-bg-img" src="images/png/code_background.png" alt="">
-      <div id="profile-msg-holder">
-        <p id="profile-msg-title">Hi</p>
-        <p class="profile-msg">
-          I'm Toni Kainulainen.<br>
-          What's up?
-        </p>
-        <p class="profile-msg">Check out my stuff!</p>
-        <div class="resume-download-container">
-          <button class="resume-download-btn">Get My Resume</button>
-          <div class="hidden resume-links-container">
-            <a class="resume-link" href="pdf/Resume-Toni-Kainulainen.pdf" target="_blank">In English</a>
-            <a class="resume-link" href="pdf/CV-Toni-Kainulainen.pdf" target="_blank">In Finnish</a>
+    <div class='header-background' id='profile-msg-background'>
+      <img id='profile-msg-bg-img' src='images/webp/code_background.webp' alt=''>
+      <div class='grid row-gap-m' id='profile-msg-holder'>
+        <p class='font-7xl'>Hi</p>
+        <p>I'm Toni Kainulainen.</p>
+        <p>What's up?</p>
+        <p>Check out my stuff!</p>
+        <div class='resume-download-container'>
+          <button class='resume-download-btn'>Get My Resume</button>
+          <div class='hidden resume-links-container'>
+            <a class='resume-link' href='pdf/Resume-Toni-Kainulainen.pdf' target='_blank'>In English</a>
+            <a class='resume-link' href='pdf/CV-Toni-Kainulainen.pdf' target='_blank'>In Finnish</a>
           </div>
         </div>
-        <div class="some-links-container">
-          <a class="some-link" href="https://www.linkedin.com/in/toni-kainulainen/" target="_blank">
-            <img class="some-link-img" src="images/svg/linkedin.svg" alt="Link to my LinkedIn page." width="59"
-              height="50">
+        <div class='grid cols-2 col-gap-m'>
+          <a class='justify-self-end' href='https://www.linkedin.com/in/toni-kainulainen/' target='_blank'>
+            <i class='icon-linkedin size-xxl hover-opac'></i>
           </a>
-          <a class="some-link" href="https://github.com/tontsaX" target="_blank">
-            <img class="some-link-img" src="images/png/github.png" alt="Link to my GitHub page." width="50" height="50">
+          <a href='https://github.com/tontsaX' target='_blank'>
+            <i class='icon-github size-xxl hover-opac'></i>
           </a>
         </div>
       </div>
     </div>
   </header>
-
-  <main class="center max-width">
-    <section id="about">
-      <h2 class="subtitle capitalize">About me</h2>
-      <div class="info-box">
-        <p>
-          I'm an enthusiastic Java, Python and JavaScript software developer with experience in creating
-          and maintaining mobile and web applications.
-        </p>
-        <p>
-          I like to listen history podcasts, play intruments, play games and
-          sometimes I paint miniatures or code small stuff.
-        </p>
-        <p>
-          I'm easy to work with and to approach, which makes me a great team member.
-        </p>
-        <p>
-          I dream of learning to draw properly and trying jousting.
+  <main class='grid row-gap-5xl center max-width'>
+    <section class='grid row-gap-m' id='about'>
+      <h2>About Me</h2>
+      <div class='info-box text-align-justify'>
+        <p class='grid row-gap-m'>
+          <span>
+            I'm an enthusiastic JavaScript and Python software developer with experience in 
+            creating and maintaining mobile and web applications.
+          </span>
+          <span>
+            I like to listen to history podcasts, play instruments, play games, and sometimes
+            I paint miniatures or code small stuff.
+          </span>
+          <span>I'm easy to work with and to approach, which makes me a great team member.</span>
+          <span>I dream of learning to draw properly and trying jousting.</span>
         </p>
       </div>
     </section>
-
-    <section id="education">
-      <h2 class="subtitle capitalize">Education</h2>
-      <div class="education-info info-box">
-        <p>
-          2014–2021<br>
-          <span class="bold">Engineer (Bachelor), Information Technology</span><br>
-          Turku University of Applied Science
-        </p>
-        <div id="thesis-links-container">
-          <a class="thesis-link" href="https://urn.fi/URN:NBN:fi:amk-2021121626472" target="_blank">My Thesis</a>
-          <a class="thesis-link" href="https://github.com/tontsaX/thesis-ridesharing-rest-api-with-spring-boot"
-            target="_blank">Github
+    <section class='grid row-gap-m' id='education'>
+      <h2>Education</h2>
+      <div class='info-box grid row-gap-m'>
+        <div>
+          <p>2014&#8211;2021</p>
+          <p class='font-bold'>Engineer &#8212;Bachelor&#8212;, Information and Communications Technology</p>
+          <p>Turku University of Applied Science</p>
+        </div>
+        <div class='flex col-gap-m'>
+          <a class='text-underlined hover-color' href='https://urn.fi/URN:NBN:fi:amk-2021121626472' target='_blank'>
+            My Thesis
+          </a>
+          <a class='text-underlined hover-color' href='https://github.com/tontsaX/thesis-ridesharing-rest-api-with-spring-boot' target='_blank'>
+            Github
           </a>
         </div>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>
-          2012–2014<br>
-          <span class="bold">Vocational qualification in Electrical Engineering and Automation Technology</span><br>
+          2012&#8211;2014<br>
+          <span class='font-bold'>Vocational qualification in Electrical Engineering and Automation Technology</span><br>
           Salo Region Vocational College
         </p>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>
-          2008–2011<br>
-          <span class="bold">A Level</span><br>
+          2008&#8211;2011<br>
+          <span class='font-bold'>A Level</span><br>
           Salo Upper Secondary School
         </p>
       </div>
-
     </section>
-
-    <section id="experience">
-      <h2 class="subtitle capitalize">Work history</h2>
-      <div class="info-box hover-glow">
-        <p class="info-box-title">
-          9/2021–12/2021<br>
-          <span class="bold">Software Developer, Project Manager</span><br>
-          Turku UAS DenTech Dental Laboratory
-        </p>
-        <button class="info-box-descr-btn info-box-descr-open" type="button">
-          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
-            height="40">
-        </button>
-        <div class="info-box-descr">
-          <p class="info-box-descr-text">
-            I was part of a 3-4 developer team developing a mouth healthcare mobile app.
-            My job was to program with React Native framework, look for information about technologies needed
-            and suggest solutions to the project owner. Employer was particularly pleased with my work.
-            I also worked as a project manager 4.11.–16.12.2021.
+    <section class='grid row-gap-m' id='experience'>
+      <h2>Work History</h2>
+      <div class='info-box has-info grid row-gap-m hover-glow'>
+        <div class='grid cols-2 align-items-center'>
+          <div>
+            <p>9/2021&#8211;12/2021</p>
+            <p class='font-bold'>
+              <i class='icon-briefcase' title='Software Developer, Project Manager'></i>
+              Software Developer, Project Manager
+            </p>
+            <p>Turku UAS DenTech Dental Laboratory</p>
+          </div>
+          <button class='btn-toggle-info justify-self-end hover-action hover-opac' type='button'>
+            <i class='icon-folder icon-folder-open'></i>
+          </button>
+        </div>
+        <div class='info-box-descr'>
+          <p>
+            I was part of a team of 3&#8211;4 developers developing a mouth healthcare mobile app.
+            My job was to program with the React Native framework, look for information about 
+            technologies needed, and suggest solutions to the project owner. The employer was 
+            particularly pleased with my work. I also worked as a project manager from
+            November 4, 2021, to December 16, 2021.
           </p>
         </div>
       </div>
-
-      <div class="info-box hover-glow">
-        <p class="info-box-title">
-          8/2018–1/2020<br>
-          <span class="bold">Operator</span><br>
-          Valmet Automotive Oy
-        </p>
-        <button class="info-box-descr-btn" type="button">
-          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
-            height="40">
-        </button>
-        <div class="info-box-descr hidden">
-          <p class="info-box-descr-text">
+      <div class='info-box has-info grid row-gap-m hover-glow'>
+        <div class='grid cols-2 align-items-center'>
+          <div>
+            <p>8/2018&#8211;1/2020</p>
+            <p class='font-bold'>Operator</p>
+            <p>Valmet Automotive Oy</p>
+          </div>
+          <button class='btn-toggle-info justify-self-end hover-action hover-opac' type='button'>
+            <i class='icon-folder'></i>
+          </button>
+        </div>
+        <div class='info-box-descr hidden'>
+          <p>
             My job was to install car hatches and doors to a coachwork,
             check fastening moments with a special tool and prepare coachworks for painting.
             The work is highly reliant on teamwork.
           </p>
         </div>
       </div>
-
-      <div class="info-box hover-glow">
-        <p class="info-box-title">
-          6/–8/2017<br>
-          <span class="bold">Distribution Center Installer</span><br>
-          Adecco Finland Oy
-        </p>
-        <button class="info-box-descr-btn" type="button">
-          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
-            height="40">
-        </button>
-        <div class="info-box-descr hidden">
-          <p class="info-box-descr-text">
-            I built small power distribution centers into block flat apartments in a client company.
-          </p>
+      <div class='info-box has-info grid row-gap-m hover-glow'>
+        <div class='grid cols-2 align-items-center'>
+          <div>
+            <p>6/2017&#8211;8/2017</p>
+            <p class='font-bold'>Distribution Center Installer</p>
+            <p>Adecco Finland Oy</p>
+          </div>
+          <button class='btn-toggle-info justify-self-end hover-action hover-opac' type='button'>
+            <i class='icon-folder'></i>
+          </button>
+        </div>
+        <div class='info-box-descr hidden'>
+          <p>I built small power distribution centers into block flat apartments in a client company.</p>
         </div>
       </div>
-
-      <div class="info-box hover-glow">
-        <p class="info-box-title">
-          6/–8/2015, 4/–8/2014, 5/–8/2013<br>
-          <span class="bold">Electrician</span><br>
-          JHS-Sähkö Oy
-        </p>
-        <button class="info-box-descr-btn" type="button">
-          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
-            height="40">
-        </button>
-        <div class="info-box-descr hidden">
-          <p class="info-box-descr-text">
+      <div class='info-box has-info grid row-gap-m hover-glow'>
+        <div class='grid cols-2 align-items-center'>
+          <div>
+            <p>6/2015&#8211;8/2015, 4/2014&#8211;8/2014, 5/2013&#8211;8/2013</p>
+            <p class='font-bold'>Electrician</p>
+            <p>JHS-Sähkö Oy</p>
+          </div>
+          <button class='btn-toggle-info justify-self-end hover-action hover-opac' type='button'>
+            <i class='icon-folder'></i>
+          </button>
+        </div>
+        <div class='info-box-descr hidden'>
+          <p>
             I made electrical installations mostly in construction or renovation of shops and
             laid fiber-optic cable in the tunnel network under Helsinki.
           </p>
         </div>
       </div>
-
-      <div class="info-box hover-glow">
-        <p class="info-box-title">
-          5/–8/2011<br>
-          <span class="bold">Summer Trainee, Lato Cell Replenishment Operator</span><br>
-          Nokia Oyj
-        </p>
-        <button class="info-box-descr-btn" type="button">
-          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description." width="40"
-            height="40">
-        </button>
-        <div class="info-box-descr hidden">
-          <p class="info-box-descr-text">
-            My job was to fill production cells and prehandle production material trolleys.
-          </p>
+      <div class='info-box has-info grid row-gap-m hover-glow'>
+        <div class='grid cols-2 align-items-center'>
+          <div>
+            <p>5/2011&#8211;8/2011</p>
+            <p class='font-bold'>Summer Trainee, Lato Cell Replenishment Operator</p>
+            <p>Nokia Oyj</p>
+          </div>
+          <button class='btn-toggle-info justify-self-end hover-action hover-opac' type='button'>
+            <i class='icon-folder'></i>
+          </button>
+        </div>
+        <div class='info-box-descr hidden'>
+          <p>My job was to fill production cells and prehandle production material trolleys.</p>
         </div>
       </div>
-
-      <div id="other-expc-btn-wrapper">
-        <button id="other-expc-btn" type="button">
-          Other Activities<br>
-          <img id="other-expc-btn-img" src="images/svg/arrow.svg" alt="Open other work activity history." width="100"
-            height="60">
+      <div class='justify-self-center'>
+        <button id='other-expc-btn' type='button'>
+          <p>Show Other Activities</p>
+          <i class='icon-arrow-down'></i>
         </button>
       </div>
-
-      <div id="other-expc-info">
-        <div class="info-box">
-          <p class="info-box-title">
-            2007–2014<br>
-            <span class="bold">Guitarist</span><br>
-            Ducktape
-          </p>
-          <img class="info-box-img" src="images/svg/ducktape.svg" alt="Band logo." width="70" height="76">
-          <div class="info-box-descr">
-            <p class="info-box-descr-text">
-              I played guitar and organized rehearses in a pop rock band.
-            </p>
+      <div id='other-expc-info'>
+        <div class='info-box grid row-gap-m'>
+          <div class='grid cols-2 align-items-center'>
+            <div>
+              <p>2007&#8211;2014</p>
+              <p class='font-bold'>Guitarist</p>
+              <p>Ducktape</p>
+            </div>
+            <img class='img-height-auto justify-self-end' src='images/svg/ducktape.svg' alt='Band logo.' width='70' height='76'>
+          </div>
+          <div class='info-box-descr'>
+            <p>I played guitar and organized rehearsals in a pop rock band.</p>
           </div>
         </div>
-
-        <div class="info-box">
-          <p class="info-box-title">
-            1/–7/2012<br>
-            <span class="bold">Jaeger (Conscript)</span><br>
-            The Finnish Defence Forces
-          </p>
-          <img class="info-box-img" src="images/svg/tornileijona.svg" alt="The Finnish Defence Forces logo" width="70"
-            height="82">
-          <div class="info-box-descr">
-            <p class="info-box-descr-text">
-              I did my mandatory 180 days conscription service as a jaeger team rifleman in motorized infantry.
-            </p>
+        <div class='info-box grid row-gap-m'>
+          <div class='grid cols-2 align-items-center'>
+            <div>
+              <p>1/2012&#8211;7/2012</p>
+              <p class='font-bold'>Jaeger &#8212;Conscript&#8212;</p>
+              <p>The Finnish Defence Forces</p>
+            </div>
+            <img class='img-height-auto justify-self-end' src='images/svg/tornileijona.svg' alt='The Finnish Defence Forces logo' width='70' height='82'>
+          </div>
+          <div class='info-box-descr'>
+            <p>I did my mandatory 180-day conscription service as a Jaeger team rifleman in motorized infantry.</p>
           </div>
         </div>
-
-        <div class="info-box">
-          <p class="info-box-title">
-            2008–2011<br>
-            <span class="bold">Youth Tutor</span><br>
+        <div class='info-box'>
+          <p class='info-box-title'>
+            2008&#8211;2011<br>
+            <span class='font-bold'>Youth Tutor</span><br>
             Salo Congregation
           </p>
-          <div class="info-box-descr">
-            <p class="info-box-descr-text">
+          <div class='info-box-descr'>
+            <p>
               My job was to keep company to the youth of couple of years younger during a youth camp in the
               congregation. Usually there was from 3-9 tutors helping out the youth instructor and the youth priest.
               Work wasn't full time and it was done once to more times for a weekend or form one to two weeks in a year.
@@ -289,141 +278,128 @@
           </div>
         </div>
       </div>
-
     </section>
-
-    <section id="skills">
-      <h2 class="subtitle capitalize">IT-Skills</h2>
-      <div class="info-box">
+    <section class='grid row-gap-m' id='skills'>
+      <h2>IT Skills</h2>
+      <div class='info-box'>
         <p>
           Web Development<br>
-          <span class="bold">JavaScript, Node.js, Java, Spring Boot, HTML, CSS</span>
+          <span class='font-bold'>JavaScript, React, Django, CSS, HTML, Node.js</span>
         </p>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>
           Software Development<br>
-          <span class="bold">React Native, Java, Python, C#, Unity</span>
+          <span class='font-bold'>Python, React Native, Java</span>
         </p>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>
           Databases<br>
-          <span class="bold">MySQL</span>
+          <span class='font-bold'>MySQL</span>
         </p>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>
           Computer Skills<br>
-          <span class="bold">Windows, Linux, Excel, Word, Powerpoint</span>
+          <span class='font-bold'>Windows, Linux, Excel, Word, Powerpoint</span>
         </p>
       </div>
     </section>
-
-    <section id="languages">
-      <h2 class="capitalize">I'm Fluent In</h2>
-      <div class="info-box mobile-centered">
-        <div class="language-info">
-          <img id="finnish-flag" src="images/svg/finnish.svg" alt="Finnish flag." width="196" height="120">
-        </div>
-        <div class="language-info">
-          <img id="english-flag" src="images/svg/english.svg" alt="Combined english american flag." width="228"
-            height="120">
+    <section class='grid row-gap-m' id='languages'>
+      <h2>I'm Fluent In</h2>
+      <div class='info-box mobile-centered'>
+        <div class='flex col-gap-m'>
+          <img class='language' id='finnish' src='images/svg/finnish.svg' alt='Finnish flag.' width='196' height='120'>
+          <img class='language' id='english' src='images/svg/english.svg' alt='Combined american british flag.' width='228' height='120'>
         </div>
       </div>
     </section>
-
-    <section id="interests">
-      <h2 class="subtitle capitalize">My Interests</h2>
-      <div class="info-box hover-glow">
-        <p class="info-box-title">
-          Music
-        </p>
-        <button class="info-box-descr-btn info-box-descr-open" type="button">
-          <img class="info-box-descr-btn-img" src="images/svg/arrow.svg" alt="Open work description.">
-        </button>
-        <div class="info-box-descr">
-          <p class="info-box-descr-text">
+    <section class='grid row-gap-m' id='interests'>
+      <h2>My Interests</h2>
+      <div class='info-box has-info hover-glow'>
+        <div class='grid cols-2 align-items-center'>
+          <p class='info-box-title'>Music</p>
+          <button class='btn-toggle-info justify-self-end hover-action hover-opac' type='button'>
+            <i class='icon-folder icon-folder-open'></i>
+          </button>
+        </div>
+        <div class='info-box-descr'>
+          <p>
             I like to play different instruments. I know how to play guitar and I've played around with piano and
             accordion. I used to make music a lot, but these days I do that rarely.
           </p>
           <p>
-            In my 'Other Activities' section, I mention playing guitar and organizing rehearses in a pop rock band
-            2007–2014.
-            The band was formed in upper secondary school and we played quite a long time.
-            We had few gigs and got to play all the way in Hungary.
+            In my 'Other Activities' section, I mention playing guitar and organizing rehearsals in a pop rock
+            band from 2007 to 2014.
+            The band was formed in upper secondary school, and we played for quite a long time. We had a few gigs
+            and got to play all the way in Hungary.
           </p>
-          <div id="band-stuff">
-            <div class="inline-block" id="soundcloud-playlist">
-              <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120609307&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+          <div id='band-stuff' class='flex align-items-center col-gap-xl'>
+            <div class='flex-1'>
+              <iframe width='100%' height='166' scrolling='no' frameborder='no'
+                src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/120609307&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'>
               </iframe>
               <div
-                style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                <a href="https://soundcloud.com/ducktape-band" title="Ducktape band" target="_blank"
-                  style="color: #cccccc; text-decoration: none;">Ducktape band</a> · <a
-                  href="https://soundcloud.com/ducktape-band/yksin-inen" title="Yksinäinen" target="_blank"
-                  style="color: #cccccc; text-decoration: none;">Yksinäinen</a>
+                style='font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;'>
+                <a href='https://soundcloud.com/ducktape-band' title='Ducktape band' target='_blank'
+                  style='color: #cccccc; text-decoration: none;'>Ducktape band</a> · <a
+                  href='https://soundcloud.com/ducktape-band/yksin-inen' title='Yksinäinen' target='_blank'
+                  style='color: #cccccc; text-decoration: none;'>Yksinäinen</a>
               </div>
             </div>
-            <div class="inline-block" id="band-links-container">
-              <a class="block band-link" href="https://www.facebook.com/ducktapeband1" target="_blank">
-                <img class="some-link-img" src="images/png/facebook-f.png" width="50" height="50">
-                <p class="inline-block">Ductape Facebook</p>
+            <div class='flex-2 grid row-gap-m'>
+              <a class='flex align-items-center col-gap-m' href='https://www.facebook.com/ducktapeband1' target='_blank'>
+                <i class='icon-facebook size-xxl hover-opac'></i>
+                <span class='text-underlined hover-color'>Ductape Facebook</span>
               </a>
-              <a class="block band-link" href="http://ducktaperockband.blogspot.com/" target="_blank">
-                <img class="some-link-img" src="images/svg/ducktape.svg" width="50" height="50">
-                <p class="inline-block">Ductape Facebook</p>
+              <a class='flex align-items-center col-gap-m' href='http://ducktaperockband.blogspot.com/' target='_blank'>
+                <img class='hover-opac' src='images/svg/ducktape.svg' width='50' height='50'>
+                <span class='text-underlined hover-color'>Ductape Blog</span>
               </a>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>Games</p>
       </div>
-
-      <div class="info-box">
+      <div class='info-box'>
         <p>Painting Miniatures</p>
       </div>
   </main>
-
-  <footer>
-    <div class="center max-width">
-      <div class="footer-info" id="footer-some-info">
-        <h2>My Other Profiles</h2>
-        <div class="some-links-container">
-          <a class="some-link" href="https://www.linkedin.com/in/toni-kainulainen-a55141144/" target="_blank">
-            <img class="some-link-img" src="images/svg/linkedin.svg" alt="Link to my LinkedIn page." width="50"
-              height="50">
-          </a>
-          <a class="some-link" href="https://github.com/tontsaX" target="_blank">
-            <img class="some-link-img" src="images/png/github.png" alt="Link to my GitHub page." width="50" height="50">
-          </a>
+  <footer id='footer-contact-info'>
+    <div class='center max-width'>
+      <div class='grid cols-2 justify-items-center'>
+        <div class='grid rows-3 row-gap-m align-items-center justify-items-center'>
+          <h2>My Other Profiles</h2>
+          <div class='grid cols-2 col-gap-m'>
+            <a href='https://www.linkedin.com/in/toni-kainulainen-a55141144/' target='_blank'>
+              <i class='icon-linkedin size-xxl hover-opac'></i>
+            </a>
+            <a href='https://github.com/tontsaX' target='_blank'>
+              <i class='icon-github size-xxl hover-opac'></i>
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div class="footer-info" id="footer-contact-info">
-        <h2>Contact Me</h2>
-        <address>
-          tonikainulainen.ttk@hotmail.fi
-        </address>
-        <div class="resume-download-container">
-          <button class="resume-download-btn">Get My Resume</button>
-          <div class="hidden resume-links-container">
-            <a class="resume-link" href="pdf/Resume-Toni-Kainulainen.pdf" target="_blank">In English</a>
-            <a class="resume-link" href="pdf/CV-Toni-Kainulainen.pdf" target="_blank">In Finnish</a>
+        <div class='grid rows-3 row-gap-m align-items-center'>
+          <h2>Contact Me</h2>
+          <address>
+            <a class='text-underlined hover-color' href='mailto:tonikainulainen.ttk@hotmail.fi'>
+              tonikainulainen.ttk@hotmail.fi
+            </a>
+          </address>
+          <div class='resume-download-container'>
+            <button class='resume-download-btn'>Get My Resume</button>
+            <div class='hidden resume-links-container'>
+              <a class='resume-link' href='pdf/Resume-Toni-Kainulainen.pdf' target='_blank'>In English</a>
+              <a class='resume-link' href='pdf/CV-Toni-Kainulainen.pdf' target='_blank'>In Finnish</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
-
-  <script src="js/resume.js"></script>
+  <script src='js/resume.js'></script>
 </body>
-
 </html>

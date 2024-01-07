@@ -115,11 +115,13 @@ const setUpInfoBoxToggleButtons = (() => {
       infoBox.addEventListener('click', () => {
         toggleElementVisibility(description);
 
-        if (description.style.display === 'block') {
-          descrBtn.style.transform = 'rotate(90deg)';
-        } else {
-          descrBtn.style.transform = 'none';
-        }
+        const btnIcon = descrBtn.querySelector('i');
+        btnIcon.classList.toggle('icon-folder-open');
+        // if (description.style.display === 'block') {
+        //   descrBtn.style.transform = 'rotate(90deg)';
+        // } else {
+        //   descrBtn.style.transform = 'none';
+        // }
       });
     }
   });

@@ -1,0 +1,276 @@
+:root {
+    --font-size-default: 20px;
+    --main-color-action: #fb0081;
+    --main-color-dark: #314757;
+    --main-color-extra-light: #fbfcfc;
+    --main-color-light: #dadee1;
+    --main-color-medium: #b6bdc4;
+    --main-color-white: #fff;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: var(--main-color-dark);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    font: var(--font-size-default, 16px) 'open sans';
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--main-color-extra-light);
+    margin: auto;
+}
+
+nav {
+    background-color: var(--main-color-extra-light);
+    -webkit-box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.2),
+      0 0.15em 0.5em 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.2),
+      0 0.15em 0.5em 0 rgba(0, 0, 0, 0.19);
+    height: 3.6rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+h1, h2 { font-size: 1.6rem; }
+
+section { scroll-margin-top: 4rem; }
+
+footer {
+    padding: 0.5rem;
+    background-color: var(--main-color-light);
+    overflow: hidden;
+}
+
+#profile#profile { top: 1.5rem; }
+
+#profile-msg-background {
+    background-color: var(--main-color-light);
+    max-width: 65%;
+    position: relative;
+    width: 65%;
+}
+
+#profile-msg-holder {
+    background-color: var(--main-color-extra-light);
+    padding: 1rem;
+    position: absolute;
+    right: 40%;
+    top: 2.1rem;
+    z-index: 1;
+}
+
+#other-expc-btn {
+    background-color: var(--main-color-extra-light);
+    border: 0;
+    padding: 1rem;
+
+    i { --icon-size: 3rem; }
+
+    &:hover {
+        -webkit-box-shadow: 0 0.1em 0.2em 0 var(--main-color-light),
+                            0 0.1em 0.2em 0 var(--main-color-light);
+
+        border-radius: 1rem;
+
+        box-shadow: 0 0.1em 0.2em 0 var(--main-color-light),
+                    0 0.1em 0.2em 0 var(--main-color-light);
+
+        cursor: pointer;
+
+        i { --icon-color: var(--main-color-action); }
+    }
+}
+
+.grid {
+    display: grid;
+
+    &.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    &.rows-3 { grid-template-rows: repeat(3, minmax(0, 1fr)); }
+}
+
+.flex {
+    display: flex;
+
+    > .flex-1 { flex: 1; }
+    > .flex-2 { flex: 2; }
+}
+
+.flex,
+.grid {
+    &.justify-center { justify-content: center; }
+
+    &.align-items-center { align-items: center; }
+    &.justify-items-center { justify-items: center; }
+
+    &.col-gap-m { column-gap: 1rem; }
+    &.col-gap-xl { column-gap: 2rem; }
+
+    &.row-gap-s { row-gap: 0.5rem; }
+    &.row-gap-m { row-gap: 1rem; }
+    &.row-gap-xl { row-gap: 2rem; }
+    &.row-gap-5xl { row-gap: 4rem; }
+
+    > .justify-self-center { justify-self: center; }
+    > .justify-self-end { justify-self: end; }
+}
+
+.center { margin: auto; }
+
+.max-width { max-width: 960px; }
+
+.hidden { display: none; }
+
+.text-align-center { text-align: center; }
+
+.text-align-justify { text-align: justify; }
+
+.text-underlined {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.text-uppercase { text-transform: uppercase; }
+
+.font-bold { font-weight: bold; }
+
+.font-7xl { font-size: 5rem; }
+
+.info-box {
+    -webkit-box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19),
+                        0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19);
+
+    border-radius: 1rem;
+
+    box-shadow: 0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19),
+                0 0.1em 0.2em 0 rgba(0, 0, 0, 0.19);
+
+    padding: 1rem;
+
+    &.has-info:hover {
+        cursor: pointer;
+
+        i.icon-folder {
+            --icon-color: var(--main-color-action);
+        }
+    }
+}
+
+.btn-toggle-info {
+    background-color: var(--main-color-white);
+    border: 0;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+
+    i { --icon-size: 2rem; }
+}
+
+.language {
+    height: 6rem;
+    width: auto;
+
+    &#finnish { border: 1px solid var(--main-color-dark); }
+}
+
+:hover {
+    &.hover-glow {
+        -webkit-box-shadow: 0 0 0.5rem var(--main-color-light);
+        box-shadow: 0 0 0.5rem var(--main-color-light);
+    }
+
+    &.hover-action {
+        -webkit-box-shadow: 0 0 0.1rem 0.1rem var(--main-color-action);
+        box-shadow: 0 0 0.1rem 0.1rem var(--main-color-action);
+        cursor: pointer;
+    }
+
+    &.hover-color {
+        color: var(--main-color-action);
+        text-decoration-color: var(--main-color-action);
+    }
+
+    &.hover-opac { opacity: 0.2; }
+}
+
+.img-height-auto { height: auto; }
+
+/* Icons */
+@font-face {
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    src: url('../fonts/icomoon.eot?qp5i1m#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon.ttf?qp5i1m') format('truetype'),
+         url('../fonts/icomoon.woff?qp5i1m') format('woff'),
+         url('../fonts/icomoon.svg?qp5i1m#icomoon') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    --_icon-color: var(--icon-color, var(--main-color-medium));
+    --_icon-size: var(--icon-size, 1rem);
+    color: var(--_icon-color);
+
+    /* Use `!important` to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-size: var(--_icon-size);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: none;
+
+    /* Better Font Rendering */
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    &::before {
+        --_icon: var(--icon, '');
+        content: var(--_icon);
+    }
+
+    &.size-l { --icon-size: 1.5rem; }
+    &.size-xxl { --icon-size: 2.5rem; }
+}
+
+.icon-arrow-up { --icon: "\ea51"; }
+.icon-arrow-down { --icon: "\ea50"; }
+.icon-briefcase { --icon: "\e9ae"; }
+.icon-download { --icon: "\e9c7"; }
+.icon-envelop { --icon: "\e945"; }
+
+.icon-facebook {
+    --icon: "\ea91";
+    --icon-color: #1877F2;
+}
+
+.icon-file-pdf { --icon: "\eadf"; }
+.icon-folder { --icon: "\e92f"; }
+
+.icon-folder-open {
+    --icon: "\e930";
+    --icon-color: var(--main-color-action);
+}
+
+.icon-github {
+    --icon: "\eab0";
+    --icon-color: #171516;
+}
+
+.icon-heart { --icon: "\e9da"; }
+.icon-home { --icon: "\e900"; }
+.icon-info { --icon: "\ea0c"; }
+.icon-link { --icon: "\e9cb"; }
+
+.icon-linkedin {
+    --icon: "\eac9";
+    --icon-color: #2c64b4;
+}
